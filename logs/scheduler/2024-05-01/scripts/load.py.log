@@ -3148,3 +3148,129 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'data_reader'
 [2024-05-01T15:47:03.180+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
 [2024-05-01T15:47:04.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 1.184 seconds
+[2024-05-01T15:47:34.637+0000] {processor.py:161} INFO - Started process (PID=14029) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:47:34.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:47:34.643+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:47:34.642+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:47:34.652+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:47:34.649+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:47:34.653+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:47:34.832+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.218 seconds
+[2024-05-01T15:48:04.937+0000] {processor.py:161} INFO - Started process (PID=14091) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:48:04.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:48:04.954+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:48:04.954+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:48:04.958+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:48:04.956+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:48:04.958+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:48:05.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.083 seconds
+[2024-05-01T15:48:35.539+0000] {processor.py:161} INFO - Started process (PID=14153) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:48:35.539+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:48:35.540+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:48:35.540+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:48:35.544+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:48:35.543+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:48:35.545+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:48:35.715+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.184 seconds
+[2024-05-01T15:49:05.773+0000] {processor.py:161} INFO - Started process (PID=14214) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:49:05.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:49:05.789+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:49:05.789+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:49:05.793+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:49:05.792+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:49:05.794+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:49:05.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.102 seconds
+[2024-05-01T15:49:36.491+0000] {processor.py:161} INFO - Started process (PID=14274) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:49:36.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:49:36.493+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:49:36.492+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:49:36.497+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:49:36.496+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:49:36.498+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:49:36.646+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.165 seconds
+[2024-05-01T15:50:07.473+0000] {processor.py:161} INFO - Started process (PID=14337) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:50:07.568+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:50:07.570+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:50:07.569+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:50:07.584+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:50:07.573+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:50:07.585+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:50:07.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.187 seconds
+[2024-05-01T15:50:38.160+0000] {processor.py:161} INFO - Started process (PID=14399) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:50:38.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:50:38.162+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:50:38.162+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:50:38.166+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:50:38.164+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:50:38.166+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:50:38.291+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.140 seconds
+[2024-05-01T15:51:08.781+0000] {processor.py:161} INFO - Started process (PID=14461) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:51:08.818+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:51:08.820+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:51:08.819+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:51:08.832+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:51:08.828+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:51:08.835+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:51:08.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.208 seconds
+[2024-05-01T15:51:39.441+0000] {processor.py:161} INFO - Started process (PID=14523) to work on /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:51:39.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/load.py for tasks to queue
+[2024-05-01T15:51:39.444+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:51:39.443+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:51:39.449+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:51:39.447+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/scripts/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/scripts/load.py", line 3, in <module>
+    from data_reader import DataReader
+ModuleNotFoundError: No module named 'data_reader'
+[2024-05-01T15:51:39.450+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/load.py
+[2024-05-01T15:51:39.724+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/load.py took 0.295 seconds

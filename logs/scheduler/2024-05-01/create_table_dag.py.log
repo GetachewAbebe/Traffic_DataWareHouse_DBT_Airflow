@@ -1430,3 +1430,122 @@
 [2024-05-01T15:37:39.748+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:37:39.748+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-05-01T15:37:39.884+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:37:39.884+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
 [2024-05-01T15:37:40.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.671 seconds
+[2024-05-01T15:38:10.802+0000] {processor.py:161} INFO - Started process (PID=12897) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:38:10.803+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:38:10.804+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:38:10.804+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:38:11.164+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:38:11.185+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:38:11.185+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:38:11.328+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:38:11.328+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:38:11.819+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 1.032 seconds
+[2024-05-01T15:38:41.960+0000] {processor.py:161} INFO - Started process (PID=12959) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:38:41.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:38:41.968+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:38:41.967+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:38:42.517+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:38:42.538+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:38:42.537+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:38:42.712+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:38:42.711+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:38:42.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.976 seconds
+[2024-05-01T15:39:13.138+0000] {processor.py:161} INFO - Started process (PID=13021) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:39:13.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:39:13.140+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:39:13.140+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:39:13.606+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:39:13.629+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:39:13.628+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:39:13.641+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:39:13.641+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:39:13.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.696 seconds
+[2024-05-01T15:39:44.008+0000] {processor.py:161} INFO - Started process (PID=13083) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:39:44.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:39:44.040+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:39:44.040+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:39:44.777+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:39:44.803+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:39:44.803+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:39:44.824+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:39:44.823+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:39:45.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 1.011 seconds
+[2024-05-01T15:40:15.348+0000] {processor.py:161} INFO - Started process (PID=13146) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:40:15.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:40:15.351+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:40:15.350+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:40:15.924+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:40:15.944+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:40:15.944+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:40:15.956+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:40:15.956+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:40:16.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.681 seconds
+[2024-05-01T15:40:46.108+0000] {processor.py:161} INFO - Started process (PID=13210) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:40:46.120+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:40:46.121+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:40:46.120+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:40:46.497+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:40:46.648+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:40:46.647+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:40:46.660+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:40:46.660+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:40:46.724+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.624 seconds
+[2024-05-01T15:41:17.560+0000] {processor.py:161} INFO - Started process (PID=13274) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:41:17.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:41:17.562+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:41:17.562+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:41:18.049+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:41:18.080+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:41:18.080+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:41:18.258+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:41:18.258+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:41:18.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.756 seconds
+[2024-05-01T15:41:48.438+0000] {processor.py:161} INFO - Started process (PID=13338) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:41:48.439+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:41:48.440+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:41:48.440+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:41:48.968+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:41:48.991+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:41:48.991+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:41:49.004+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:41:49.004+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:41:49.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.626 seconds
+[2024-05-01T15:42:19.292+0000] {processor.py:161} INFO - Started process (PID=13400) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:42:19.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:42:19.338+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:42:19.337+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:42:19.828+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:42:19.843+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:42:19.843+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:42:19.855+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:42:19.855+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:42:19.971+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.688 seconds
+[2024-05-01T15:42:50.645+0000] {processor.py:161} INFO - Started process (PID=13462) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:42:50.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:42:50.680+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:42:50.679+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:42:51.262+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:42:51.277+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:42:51.277+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:42:51.289+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:42:51.289+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:42:51.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.747 seconds
+[2024-05-01T15:43:21.580+0000] {processor.py:161} INFO - Started process (PID=13524) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:43:21.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:43:21.584+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:43:21.583+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:43:22.182+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:43:22.214+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:43:22.214+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:43:22.238+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:43:22.238+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:43:22.329+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.761 seconds
+[2024-05-01T15:43:52.884+0000] {processor.py:161} INFO - Started process (PID=13586) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:43:52.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:43:52.900+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:43:52.900+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:43:53.450+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:43:53.469+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:43:53.469+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:43:53.481+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:43:53.481+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:43:53.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.660 seconds
+[2024-05-01T15:44:23.651+0000] {processor.py:161} INFO - Started process (PID=13648) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:44:23.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:44:23.653+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:44:23.652+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:44:24.199+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:44:24.217+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:44:24.217+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:44:24.237+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:44:24.236+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:44:24.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.694 seconds
+[2024-05-01T15:44:54.408+0000] {processor.py:161} INFO - Started process (PID=13710) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:44:54.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:44:54.501+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:44:54.501+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:44:55.005+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:44:55.024+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:44:55.023+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:44:55.040+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:44:55.040+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:44:55.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.779 seconds
+[2024-05-01T15:45:25.251+0000] {processor.py:161} INFO - Started process (PID=13772) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:45:25.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:45:25.254+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:45:25.253+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:45:26.052+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:45:26.081+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:45:26.080+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:45:26.103+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:45:26.103+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:45:26.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.953 seconds
+[2024-05-01T15:45:56.929+0000] {processor.py:161} INFO - Started process (PID=13834) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:45:57.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:45:57.021+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:45:57.020+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:45:57.594+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:45:57.609+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:45:57.608+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:45:57.619+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:45:57.618+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:45:57.723+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.836 seconds
+[2024-05-01T15:46:28.659+0000] {processor.py:161} INFO - Started process (PID=13898) to work on /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:46:28.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table_dag.py for tasks to queue
+[2024-05-01T15:46:28.665+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:46:28.664+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:46:29.196+0000] {processor.py:840} INFO - DAG(s) 'create_vehicle_tables' retrieved from /opt/airflow/dags/create_table_dag.py
+[2024-05-01T15:46:29.220+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:46:29.219+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-01T15:46:29.238+0000] {logging_mixin.py:188} INFO - [2024-05-01T15:46:29.237+0000] {dag.py:3954} INFO - Setting next_dagrun for create_vehicle_tables to None, run_after=None
+[2024-05-01T15:46:29.290+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table_dag.py took 0.661 seconds

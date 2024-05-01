@@ -1,4 +1,3 @@
-Copy
 # Base requirements
 python==3.9.7
 pandas==1.3.4

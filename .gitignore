@@ -1,4 +1,9 @@
 /data/*
-
+/dags/data*
 /myenv/*
 .env
+/logs*
+Pipfile
+Pipfile.lock
+/logs/dag_processor_manager/dag_processor_manager.log*
+/logs/scheduler/latest*

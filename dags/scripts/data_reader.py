@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 class DataReader:
     def __init__(self, file_path=None) -> None:
         self.filepath = file_path
@@ -9,21 +10,47 @@ class DataReader:
         return f"{filename}_{row_num}"
 
     def read_file(self, path: str) -> list:
-        
+        """Read a file from path and returns list of the lines in the file
+
+        Parameters
+        ----------
+        path : str
+            file location path
+
+        Returns:
+        list
+            the file content in a list
+        """
         with open(path, 'r') as f:
             lines = f.readlines()[1:]
             lines = list(map(lambda l: l.strip('\n'), lines))
             return lines
 
     def parse(self, lines: list, filename: str) -> tuple:
-        vehicle_info = {
+        """parses the lines into 5 columns and returns a pandas DataFrame
+
+        Parameters
+        ----------
+        lines : list
+            a list of lines from the source file
+        filename : str
+            the filename, used for generating unique identifiers
+
+        Returns
+        -------
+        tuple
+            contains two dataframes. one for the vehicle info and another
+            for their trajectories.
+        """
+
+        veh_info = {
             "unique_id": [],
             "track_id": [],
             "veh_type": [],
             "traveled_distance": [],
             "avg_speed": [],
         }
-        trajectory_info = {
+        trajectories = {
             "unique_id": [],
             "lat": [],
             "lon": [],
@@ -35,27 +62,42 @@ class DataReader:
         for row_num, line in enumerate(lines):
             uid = self.get_uid(filename, row_num)
             line = line.split("; ")[:-1]
+            # assert len(line[4:]) % 6 == 0, f"row number {row_num} caused the error: len(line[4:]) % 6 = {len(line[4:]) % 6}"
             assert len(line[4:]) % 6 == 0, f"{line}"
-            vehicle_info["unique_id"].append(uid)
-            vehicle_info["track_id"].append(int(line[0]))
-            vehicle_info["veh_type"].append(line[1])
-            vehicle_info["traveled_distance"].append(float(line[2]))
-            vehicle_info["avg_speed"].append(float(line[3]))
+            veh_info["unique_id"].append(uid)
+            veh_info["track_id"].append(int(line[0]))
+            veh_info["veh_type"].append(line[1])
+            veh_info["traveled_distance"].append(float(line[2]))
+            veh_info["avg_speed"].append(float(line[3]))
             for i in range(0, len(line[4:]), 6):
-                trajectory_info["unique_id"].append(uid)
-                trajectory_info["lat"].append(float(line[4+i+0]))
-                trajectory_info["lon"].append(float(line[4+i+1]))
-                trajectory_info["speed"].append(float(line[4+i+2]))
-                trajectory_info["lon_acc"].append(float(line[4+i+3]))
-                trajectory_info["lat_acc"].append(float(line[4+i+4]))
-                trajectory_info["time"].append(float(line[4+i+5]))
+                trajectories["unique_id"].append(uid)
+                trajectories["lat"].append(float(line[4+i+0]))
+                trajectories["lon"].append(float(line[4+i+1]))
+                trajectories["speed"].append(float(line[4+i+2]))
+                trajectories["lon_acc"].append(float(line[4+i+3]))
+                trajectories["lat_acc"].append(float(line[4+i+4]))
+                trajectories["time"].append(float(line[4+i+5]))
 
-        vehicle_df = pd.DataFrame(vehicle_info).reset_index(drop=True)
-        trajectories_df = pd.DataFrame(trajectory_info).reset_index(drop=True)
+        vehicle_df = pd.DataFrame(veh_info).reset_index(drop=True)
+        trajectories_df = pd.DataFrame(trajectories).reset_index(drop=True)
         return vehicle_df, trajectories_df
 
     def get_dfs(self, file_path: str = None, v=0) -> tuple:
-      
+        """This calls the above two function. It takes the files path
+        and returns a pandas dataframe object
+
+        Parameters
+        ----------
+        file_path : str
+            raw csv file path
+        v: int
+            verbosity selector
+
+        Returns
+        -------
+        tuple
+            transformed version of csv as two pd.DataFrame
+        """
         if not file_path and self.filepath:
             file_path = self.filepath
 
@@ -72,4 +114,8 @@ class DataReader:
         return vehicle_df, trajectories_df
 
 if __name__ == "__main__":
+    
+    # DataReader(file_path='C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/data/20181024_d1_0830_0900.csv').get_dfs(v=1)
     DataReader(file_path="./data/raw_traffic_data.csv").get_dfs(v=1)
+    # DataReader(file_path='././data/20181024_d1_0830_0900.csv').get_dfs(v=1)
+    # # DataReader(file_path= f"././data/20181024_d1_0830_0900.csv").get_dfs(v=1)

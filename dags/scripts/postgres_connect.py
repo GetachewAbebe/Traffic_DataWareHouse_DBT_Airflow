@@ -1,3 +1,4 @@
+
 import os
 from os.path import join, dirname
 from pprint import pprint
@@ -6,30 +7,30 @@ import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy import text
 from sqlalchemy import inspect
-from dotenv import load_dotenv
-import urllib.parse
+# from dotenv import load_dotenv
 
+# dotenv_path = join(dirname(__file__), '.env')
+# load_dotenv(dotenv_path)
 
+# Connect to your PostgreSQL database on a remote server
 dag_path = os.getcwd()
 
-# Get PostgreSQL credentials from environment variables
-load_dotenv()
-username = os.getenv("POSTGRES_USERNAME")
-password = os.getenv("POSTGRES_PASSWORD")
-host = os.getenv("POSTGRES_HOST")
-database_name = os.getenv("POSTGRES_DATABASE")
-# Encode the password if needed
-encoded_password = urllib.parse.quote(password)
-# Create the database URL
-database_url = f"postgresql://{username}:{encoded_password}@{host}/{database_name}"
-# Create the engine using the database URL
-engine = create_engine(database_url)
+HOST = "localhost"
+PORT = "5432"
+USER = "postgres"
+PASS = "lawofatt7"
+DB = "Traffic_DWH"
+
+# Construct a SQLAlchemy connection string
+CONNECTION_STR = f"postgresql+psycopg2://airflow:airflow@host:5432/airflow"
+# Create a SQLAlchemy engine
+ENGINE = create_engine(CONNECTION_STR)
 BANNER = "="*20
 
 # Create the tables
 def create_tables(name):
     try:
-        with engine.connect() as conn:
+        with ENGINE.connect() as conn:
             with open(name) as file:
                 query = text(file.read())
                 conn.execute(query)
@@ -41,7 +42,7 @@ def create_tables(name):
 # Populate the tables
 def insert_data(df: pd.DataFrame, table_name):
     try:
-        with engine.connect() as conn:
+        with ENGINE.connect() as conn:
             df.to_sql(name=table_name, con=conn,
                       if_exists='replace', index=False)
         print(f"Done inserting to {table_name}")
@@ -52,19 +53,19 @@ def insert_data(df: pd.DataFrame, table_name):
 
 # Implement Querying functions
 def get_table_names():
-    with engine.connect() as conn:
+    with ENGINE.connect() as conn:
         inspector = inspect(conn)
         names = inspector.get_table_names()
         return names
 
 def get_vehicles():
-    with engine.connect() as conn:
+    with ENGINE.connect() as conn:
         veh_df = pd.read_sql_table('vehicles', con=conn)
 
         return veh_df
 
 def get_trajectories():
-    with engine.connect() as conn:
+    with ENGINE.connect() as conn:
         trajectories_df = pd.read_sql_table('trajectories', con=conn)
 
         return trajectories_df

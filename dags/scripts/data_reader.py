@@ -1,6 +1,4 @@
 import pandas as pd
-
-
 class DataReader:
     def __init__(self, file_path=None) -> None:
         self.filepath = file_path
@@ -92,7 +90,6 @@ class DataReader:
             raw csv file path
         v: int
             verbosity selector
-
         Returns
         -------
         tuple
@@ -112,7 +109,6 @@ class DataReader:
             print(trajectories_df.head())
             print(trajectories_df.info())
         return vehicle_df, trajectories_df
-
 if __name__ == "__main__":
     
     # DataReader(file_path='C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/data/20181024_d1_0830_0900.csv').get_dfs(v=1)

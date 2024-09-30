@@ -1,6 +1,6 @@
 /data/*
 /dags/data*
-/myenv/*
+/my_env/*
 .env
 /logs*
 Pipfile
